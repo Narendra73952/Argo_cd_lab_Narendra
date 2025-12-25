@@ -5,10 +5,10 @@ metadata:
 spec:    
    type: loadbalencer
    selector:  
-      app:  starbux
+      app: nginx:stable-alpine3.23-perl
    ports: 
-   - port:  8080
-     targetPorts: 8080
+   - port:  80
+     targetPorts: 80
       
 
 
