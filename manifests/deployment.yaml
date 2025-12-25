@@ -1,19 +1,19 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata: 
-   name: star-buk-Deployment
+   name: nginx
 spec: 
   replicas: 3
   selector: 
     matchLabels:
-      app: starbux
+      app: nginx
   template: 
     metadata:
       labels:
-        app: starbuk
+        app: nginx
   spec: 
     container: 
-      - name:  starbuk
+      - name:  nginx
         image:  nginxdemos/hello
         ports: 
         - containerPort: 80
