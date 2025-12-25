@@ -14,6 +14,6 @@ spec:
 spec: 
   container: 
     - name:  starbuk
-      image:  gariptipici/starbux:0.0.1
+      image:  nginxdemos/hello
       ports: 
       - containerPort: 80
