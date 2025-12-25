@@ -1,0 +1,19 @@
+apiVersion: app/V1
+kind: Deployment
+metadata: 
+   name: star-buk-Deployment
+spec: 
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: starbux
+  template: 
+    metadata:
+      labels:
+        app: starbuk
+spec: 
+  container: 
+    - name:  starbuk
+      image:  gariptipici/starbux:0.0.1
+      ports: 
+      - containerPort: 80
