@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
         app: starbuk
-spec: 
-  container: 
-    - name:  starbuk
-      image:  nginxdemos/hello
-      ports: 
-      - containerPort: 80
+  spec: 
+    container: 
+      - name:  starbuk
+        image:  nginxdemos/hello
+        ports: 
+        - containerPort: 80
