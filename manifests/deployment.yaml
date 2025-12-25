@@ -14,6 +14,6 @@ spec:
   spec: 
     container: 
       - name:  nginx
-        image:  nginxdemos/hello
+        image:  nginx:stable-alpine3.23-perl
         ports: 
         - containerPort: 80
