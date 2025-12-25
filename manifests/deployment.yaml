@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
         app: nginx
-  spec: 
-    container: 
-      - name:  nginx
-        image:  nginx:stable-alpine3.23-perl
-        ports: 
-        - containerPort: 80
+    spec: 
+      container: 
+       - name:  nginx
+         image:  nginx:stable-alpine3.23-perl
+         ports: 
+         - containerPort: 80
